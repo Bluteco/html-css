@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes 
+        ou simplemente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px )"  srcset="imagens/sandero_0_K113.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/C3_1_K004.png" type="image/png">
+        <img src="imagens/logan_1_K068.png" alt="imagens flexivel">
+    </picture>
+    <h1>Reproduzuir Áudio</h1>
+    <p>Vamos aprender a Reproduzuir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/Tell Me That I Can't (Clean) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midias/Tell Me That I Can't (Clean) - NEFFEX.ogg" type="audio/ogg">
+        <source src="midias/Tell Me That I Can't (Clean) - NEFFEX.wav" type="audio/wav">
+        <p>infelimente seu navegador não conseguir reproduzir áudio, <a href="midias/That's What It Takes (Clean) - NEFFEX.mp3">clique aqui para baixar o arquivo mp3</a> </p>
+        
+    </audio>
+    
+</body>
+</html>

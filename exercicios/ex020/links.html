@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    
+    <style>
+        /*
+        Seletores personalizados 
+        # = id
+        . = class
+        : = psudo-class
+        > = clildren (familia)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a::after{
+            content: '  [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:active {
+            color: black;
+            text-decoration: underline;
+        }
+        .especial {
+            background-color: rgb(194, 184, 160);
+        }
+        .especial::before{
+            content: '->';
+        }
+        .especial::after {
+            content: ->;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando</h1>
+    <ul>
+        <li><a href="https://fkparts.mercadoshops.com.br/" target="_blank">Site da Fk Parts</a></li>
+        <li><a href="https://www.facebook.com/tecotuning" target="_blank">Facebok da Fk Parts</a></li>
+        <li><a href="https://www.youtube.com/" class="especial" target="_blank">Canal do youTub</a></li>
+    </ul>
+    
+</body>
+</html>
+
